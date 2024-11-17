@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+.mountain{
+    /* position: absolute; */
+    /* position: relative; */
+    width: 365px;
+    height: 365px;
+    margin-bottom: 0%;
+}
+.sun{
+    /* position: absolute; */
+    width: 200px;
+    height: 200px;
+    margin-left: 650px;
+    animation-name: sun;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+.cloudy{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+.cloudy .one{
+    animation-name: sky_l;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+.cloudy .two{
+    width: 150px;
+    height: 150px;
+    animation-name: sky_r;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sun{
+    0%{
+        margin-bottom: 0px;
+        margin-top: 100px;
+    }
+    50%{
+        margin-bottom: 230px;
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: 100px;
+        margin-bottom: 0px;
+    }
+}
+
+@keyframes sky_l {
+    0%{
+        margin-left: 0%;
+        margin-right: 100%;
+    }
+    25%{
+        margin-left: 100%;
+        margin-right: 0%;
+    }
+    50%{
+        margin-left: 0%;
+        margin-right: 100%;
+    }
+    100%{
+        margin-left: 100%;
+    }
+}
+
+@keyframes sky_r {
+    0%{
+        margin-left: 100%;
+        margin-right: 0%;
+    }
+    25%{
+        margin-left: 0%;
+        margin-right: 100%;
+    }
+    50%{
+        margin-left: 100%;
+        margin-right: 0%;
+    }
+    100%{
+        margin-left: 0%;
+    }
+}
